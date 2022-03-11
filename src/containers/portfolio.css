@@ -96,6 +96,7 @@
   width: 18vw;
   height: 25vh;
   margin: 10px;
+  overflow: scroll;
 }
 
 .portfolio-img {
