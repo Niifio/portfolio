@@ -8,10 +8,8 @@ const Card = ({ title, img, description, Url }) => {
             <img src={`../image/${img}`} alt="" className="portfolio-img" />
           </div>
           <div className="theback">
-            <div className="descriptions">
-              <h3>{title}</h3>
-              <p>{description}</p>
-            </div>
+            <h3>{title}</h3>
+            <p>{description}</p>
             <a href={Url} target="_blank" rel="noreferrer">
               <button>View Site</button>
             </a>
