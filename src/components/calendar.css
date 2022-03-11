@@ -1,0 +1,45 @@
+.app__calendar {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+.calendar__content {
+  position: relative;
+  width: 12vw;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0004);
+}
+.calendar__month {
+  position: relative;
+  padding: 0.3125rem 0.625rem;
+  background: #f84848;
+  color: #f2f5f7;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.calendar__weekday {
+  margin-top: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #999;
+}
+.calendar__daynum {
+  margin: 0px;
+  font-size: 4.4rem;
+  font-weight: 800;
+  color: #333;
+}
+.calendar__year {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #999;
+}

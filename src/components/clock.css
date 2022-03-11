@@ -1,0 +1,173 @@
+.clock-circle {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  position: relative;
+}
+
+.point {
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 50%;
+  background-color: #f83737;
+  position: absolute;
+  top: 4.65vw;
+  left: 4.65vw;
+  z-index: 10;
+}
+
+.minute-hand-wrapper {
+  width: 8vw;
+  height: 8vw;
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+
+  border-radius: 50%;
+}
+.minute-hand {
+  position: relative;
+}
+.minute-hand .hand {
+  width: 0.2vw;
+  height: 4vw;
+  background-color: #f83737;
+  position: absolute;
+  top: 1vw;
+  left: 3.9vw;
+}
+
+.hour-hand-wrapper {
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+
+  border-radius: 50%;
+}
+.hour-hand {
+  position: relative;
+}
+.hour-hand .hand {
+  width: 0.3vw;
+  height: 3vw;
+  background-color: rgb(2, 126, 251);
+  position: absolute;
+  top: 1vw;
+  left: 2.85vw;
+}
+
+.second-hand-wrapper {
+  width: 9vw;
+  height: 9vw;
+  position: absolute;
+  top: 0.5vw;
+  left: 0.5vw;
+  border-radius: 50%;
+}
+.second-hand {
+  position: relative;
+}
+.second-hand .hand {
+  width: 0.1vw;
+  height: 5vw;
+  background-color: #f83737;
+  position: absolute;
+  top: 1vw;
+  left: 4.49vw;
+}
+
+.hour {
+  --rotation: 0;
+  position: absolute;
+  font-size: 14px;
+  color: #999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+}
+
+.hour-1 {
+  --rotation: 30deg;
+}
+.hour-2 {
+  --rotation: 60deg;
+}
+.hour-3 {
+  --rotation: 90deg;
+}
+.hour-4 {
+  --rotation: 120deg;
+}
+
+.hour-5 {
+  --rotation: 150deg;
+}
+.hour-6 {
+  --rotation: 180deg;
+}
+.hour-7 {
+  --rotation: 210deg;
+}
+.hour-8 {
+  --rotation: 240deg;
+}
+.hour-9 {
+  --rotation: 270deg;
+}
+.hour-10 {
+  --rotation: 300deg;
+}
+.hour-11 {
+  --rotation: 330deg;
+}
+
+.hour-1 > p {
+  margin: 0;
+  transform: rotateZ(calc(-360deg / 12));
+}
+.hour-2 > p {
+  margin: 0;
+  transform: rotateZ(calc(-2 * 360deg / 12));
+}
+.hour-3 > p {
+  margin: 0;
+  transform: rotateZ(calc(-3 * 360deg / 12));
+}
+.hour-4 > p {
+  margin: 0;
+  transform: rotateZ(calc(-4 * 360deg / 12));
+}
+.hour-5 > p {
+  margin: 0;
+  transform: rotateZ(calc(-5 * 360deg / 12));
+}
+.hour-6 > p {
+  margin: 0;
+  transform: rotateZ(calc(-6 * 360deg / 12));
+}
+.hour-7 > p {
+  margin: 0;
+  transform: rotateZ(calc(-7 * 360deg / 12));
+}
+.hour-8 > p {
+  margin: 0;
+  transform: rotateZ(calc(-8 * 360deg / 12));
+}
+.hour-9 > p {
+  margin: 0;
+  transform: rotateZ(calc(-9 * 360deg / 12));
+}
+.hour-10 > p {
+  margin: 0;
+  transform: rotateZ(calc(-10 * 360deg / 12));
+}
+.hour-11 > p {
+  margin: 0;
+  transform: rotateZ(calc(-11 * 360deg / 12));
+}
+.hour-12 > p {
+  margin: 0;
+}

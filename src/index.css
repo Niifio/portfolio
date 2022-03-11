@@ -1,0 +1,245 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* Navbar */
+
+.navbar {
+  position: relative;
+  background-color: black;
+  z-index: 10;
+}
+.navbar__items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: absolute;
+}
+
+.navbar__burger {
+  position: absolute;
+  margin-top: 40px;
+}
+.paper-items {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__items-links {
+  flex-direction: column;
+  display: flex;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #424242;
+  opacity: 0.75;
+  line-height: 2;
+}
+
+/* NavLinks */
+.navlinks__app-container {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  width: 100vw;
+  height: 300px;
+  z-index: 99;
+}
+.navlinks__app-content {
+  padding: 8px 100px;
+}
+.navlinks__app-content > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navlinks__app-content > ul > li {
+  list-style: none;
+  padding-left: 15px;
+}
+.navlinks__app-content > ul > li > .links {
+  font-family: "Roboto" serif;
+  text-decoration: none;
+  color: #424242;
+  font-size: 18px;
+  letter-spacing: 1px;
+  opacity: 0.75;
+  position: relative;
+}
+.navlinks__app-content > ul > li > .active {
+  color: black;
+  opacity: 0.7;
+}
+.navlinks__app-content > ul > li > .links:hover {
+  opacity: 1;
+}
+
+.navlinks__app-content > ul > li > .links::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #037fb0;
+  width: 0%;
+  bottom: -5px;
+}
+.navlinks__app-content > ul > li > .links:hover::before {
+  width: 100%;
+}
+
+/* forms */
+
+.form__app {
+  display: flex;
+}
+.form__app-container {
+  display: flex;
+  flex-direction: column;
+}
+.form__inputs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vh;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+}
+::placeholder {
+  padding-left: 10px;
+  font-size: 1vw;
+  color: #9e9e9e;
+}
+.form-icons {
+  color: #9e9e9e;
+  text-align: center;
+}
+.form-icon {
+  height: 100%;
+  background-color: #fafafa;
+  padding: 15px 10px;
+}
+
+.form-icon1 {
+  height: 100%;
+  padding: 5px 10px 100px 10px;
+  margin-top: 0;
+  background-color: #fafafa;
+}
+.form__name,
+.form__email {
+  height: 60px;
+  outline: none;
+  border: none;
+}
+
+.form__submit {
+  width: 150px;
+  padding: 10px 5px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 30%);
+}
+.form__submit:hover {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 30%);
+}
+
+textarea {
+  border: none;
+  resize: none;
+}
+textarea:focus {
+  outline: none;
+}
+.submit-input {
+  margin-top: 30px;
+}
+input {
+  width: 100%;
+}
+/* Simple Map */
+.map-icon {
+  color: #fc6d6d;
+}
+
+@media screen and (max-width: 768px) {
+  ::placeholder {
+    font-size: 1.8vw;
+  }
+  .form__inputs {
+    border-bottom: 0.2vw solid #e0e0e0;
+  }
+}
+
+/* Arrows*/
+.global__app-arrows {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10%;
+  right: 2%;
+  gap: 5px;
+}
+
+.arrowback,
+.arrowforward {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #fff;
+  box-shadow: 0 0 14px 0 rgb(0 0 0 / 10%);
+}
+
+.arrowback:hover,
+.arrowforward:hover {
+  box-shadow: 0 0 25px 0 rgb(0 0 0 / 18%);
+}
+.arrows {
+  color: #424242;
+}
+
+.arrows:hover {
+  color: #037fb0;
+}
+.arrow-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4vw;
+  text-align: center;
+}
+
+/* Portfolio CSS */
+
+@media screen and (max-width: 920px) {
+  .navlinks__app-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 921px) {
+  .navbar {
+    display: none;
+  }
+}

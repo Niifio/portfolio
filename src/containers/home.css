@@ -1,0 +1,165 @@
+.app__home {
+  background-image: url("/src/images/aboutbg.png");
+  box-sizing: border-box;
+}
+.app__home-content {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.app__home_profile {
+  padding-top: 12.5%;
+  position: relative;
+  width: 31.25%;
+  height: 37.5%;
+}
+.app__home_profile-header {
+  padding-top: 12.5%;
+  position: absolute;
+  top: 9.375%;
+  left: -9.375%;
+}
+
+.app__home_profile-text {
+  padding-top: 2.5rem;
+  position: absolute;
+  top: 35vh;
+  left: 4.5vw;
+}
+.app__home_profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20vh;
+  left: 8vw;
+  width: 18vw;
+  height: 18vh;
+  position: absolute;
+}
+.app__home_profile-pic > img {
+  left: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  border: 1.5px solid #f2f5f7;
+}
+
+.app__home_left-card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 15vh;
+  gap: 2.5rem;
+  left: 15vw;
+}
+
+.app__home_right-card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 25vh;
+  gap: 1.25%;
+  right: 25vw;
+}
+
+.app__home_profile-text > h1 {
+  font-size: clamp(1vw, 2vw, 4vw);
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+  color: #fc6d6d;
+}
+
+.app__home_profile-text > h1::before,
+.app__home_profile-text > h1::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.app__home_profile-text > h1::before {
+  background-image: url("/src/images/aboutbg.png");
+  animation: typewriter 6s steps(24) 1s forwards;
+}
+
+.app__home_profile-text > h1::after {
+  width: 0.125em;
+  border-radius: 0.07px;
+  background: #fc6d6d;
+  animation: typewriter 6s steps(24) 1s forwards, blink 750ms steps(24) infinite;
+}
+
+.subtitle {
+  background: -webkit-linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8vw;
+  font-weight: 400;
+  opacity: 0;
+  text-align: center;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(6s + 2s) forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 920px) {
+  .app__home_profile-pic {
+    padding-bottom: 25px;
+  }
+  .app__home_profile-pic > img {
+    left: 30vw;
+    width: 30vw;
+  }
+  .app__home_profile-text > h1 {
+    font-size: clamp(3vw, 4vw, 5vw);
+    right: 15vw;
+  }
+
+  .subtitle {
+    position: absolute;
+    font-size: 3.5vw;
+  }
+  .app__home_left-card {
+    display: none;
+  }
+  .app__home_right-card {
+    top: 70vh;
+    right: 55%;
+  }
+  .app__home_right-card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+}

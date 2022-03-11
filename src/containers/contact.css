@@ -1,0 +1,114 @@
+.contact__app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/src/images/aboutbg.png");
+  position: relative;
+  overflow: scroll;
+}
+.contact__app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  left: 15vw;
+  top: 12vh;
+  position: absolute;
+  overflow: scroll;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px) saturate(180%);
+  -webkit-backdrop-filter: blur(4px) saturate(180%);
+  border-radius: 10px;
+  border: 0.05px solid rgba(255, 255, 255, 0);
+}
+.contact__app-header {
+  border-radius: 10px 10px 0 0;
+  background: #037fb0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.contact__app-header > h1 {
+  color: #fff;
+  letter-spacing: 0.02rem;
+  font-size: 3vw;
+}
+.contact__app-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  gap: 1vw;
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  margin-top: 0;
+}
+.google-map {
+  padding-bottom: 2vh;
+}
+.contact__app-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contact__app-icons-text {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.icons {
+  color: rgb(252, 109, 109);
+}
+
+.icons-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25vw;
+  height: 2.25vw;
+  border-radius: 50%;
+  border: 0.2px solid rgba(66, 66, 66, 0.04);
+  background-color: #fafafa;
+}
+
+.contact__form > h2,
+.contact__address > h2 {
+  font-size: 1.5vw;
+  font-family: "Montserrat";
+}
+.colorChange {
+  color: rgb(252, 109, 109);
+}
+
+@media screen and (max-width: 800px) {
+  .contact__app-content {
+    top: 10vh;
+    width: 90vw;
+    left: 5vw;
+  }
+  .contact__app-body {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10px;
+    flex-direction: column;
+    padding-top: 30px;
+    overflow: scroll;
+  }
+
+  .contact__form > h2,
+  .contact__address > h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (801px <= width <= 1230px) {
+  .contact__app-content {
+    width: 90vw;
+    left: 5vw;
+  }
+  .contact__address > h2 {
+    margin-top: -1.2vh;
+  }
+}
