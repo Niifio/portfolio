@@ -85,7 +85,7 @@ const About = () => {
                 developing, improving and obtaining the necessary skills to
                 enhance my skills and be efficient.
               </p>
-              <a href="../image/developer.pdf" download>
+              <a href="../image/developers.pdf" download>
                 <button className="app__about-btn">DOWNLOAD RESUME</button>
               </a>
             </div>

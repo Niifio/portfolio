@@ -127,7 +127,7 @@ const Resume = () => {
                   </ul>
                 </div>
               </div>
-              <a href="../image/developer.pdf" download>
+              <a href="../image/developers.pdf" download>
                 <button className="app__resume-btn">DOWNLOAD RESUME</button>
               </a>
             </div>

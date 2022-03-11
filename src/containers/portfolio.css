@@ -52,8 +52,9 @@
   width: 100vw;
   align-items: center;
   justify-content: center;
-  overflow: scroll;
+  /* overflow: scroll; */
   background-image: url("/src/images/aboutbg.png");
+  overflow-x: hidden;
 }
 .portfolio__container {
   width: 70vw;
@@ -88,6 +89,7 @@
   flex-wrap: wrap;
   border-radius: 0px 0px 10px 10px;
   margin-left: 45px;
+  overflow: scroll;
 }
 .portfolio__card {
   width: 18vw;
