@@ -53,9 +53,9 @@
   width: 100vw;
   align-items: center;
   justify-content: center;
-  /* overflow: scroll; */
+  overflow: visible;
   background-image: url("/src/images/aboutbg.png");
-  overflow: hidden;
+  overflow: scroll;
 }
 .portfolio__container {
   width: 70vw;
@@ -79,7 +79,6 @@
   letter-spacing: 0.75px;
   border-radius: 10px 10px 0 0;
   color: #fff;
-  z-index: 99;
   position: relative;
   background: #037fb0;
 }
@@ -91,7 +90,8 @@
   flex-wrap: wrap;
   border-radius: 0px 0px 10px 10px;
   margin-left: 45px;
-  overflow-y: scroll;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .portfolio__card {
   width: 18vw;
@@ -111,8 +111,6 @@ button {
 @media only screen and (max-width: 375px) {
   .theback {
     font-size: 6px;
-
-    -webkit-overflow-scrolling: touch;
   }
 }
 @media only screen and (max-width: 900px) {
