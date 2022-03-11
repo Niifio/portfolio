@@ -42,6 +42,7 @@
   overflow: hidden;
   background-color: #fafafa;
   color: #333;
+
   text-align: center;
   transform: rotateY(180deg);
 }
@@ -54,7 +55,7 @@
   justify-content: center;
   /* overflow: scroll; */
   background-image: url("/src/images/aboutbg.png");
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .portfolio__container {
   width: 70vw;
@@ -106,6 +107,12 @@ button {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 375px) {
+  .theback {
+    font-size: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 @media only screen and (max-width: 900px) {
   .portfolio__cards {
     flex-direction: column;
@@ -127,7 +134,6 @@ button {
 }
 
 @media (901px <= width <= 1100px) {
-  
   .portfolio__card {
     width: 30vw;
     max-height: 12vh;
