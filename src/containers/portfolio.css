@@ -55,7 +55,6 @@
   justify-content: center;
   overflow: scroll;
   background-image: url("/src/images/aboutbg.png");
-  overflow: scroll;
 }
 .portfolio__container {
   width: 70vw;
@@ -81,6 +80,7 @@
   color: #fff;
   position: relative;
   background: #037fb0;
+  
 }
 
 .portfolio__cards {
@@ -92,7 +92,6 @@
   margin-left: 45px;
   overflow: scroll;
   -webkit-overflow-scrolling: scroll;
-
 }
 .portfolio__card {
   width: 18vw;
@@ -111,10 +110,27 @@ button {
 
 @media only screen and (max-width: 375px) {
   .theback {
-    font-size: 10px;
+    font-size: 2.5vw;
+  }
+  .portfolio__cards {
+    flex-direction: column;
+    margin-left: 8vw;
+    overflow: scroll;
+  }
+  .portfolio__card {
+    width: 60vw;
+  }
+  .mainContainer {
+    width: 50vw;
+  }
+  .thefront {
+    width: 50vw;
+  }
+  .theback {
+    width: 50vw;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (376px <= width <= 900px) {
   .portfolio__cards {
     flex-direction: column;
     margin-left: 8vw;
