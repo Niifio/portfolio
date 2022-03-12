@@ -10,8 +10,8 @@ const Card = ({ title, img, description, Url }) => {
           <div className="theback">
             <h3>{title}</h3>
             <p>{description}</p>
-            <a href={Url} target="_blank" rel="noreferrer">
-              <button>View Site</button>
+            <a href={Url} target="_blank" rel="noreferrer" className="portfolio-link">
+              <button className="portfolio-btn">View Site</button>
             </a>
           </div>
         </div>

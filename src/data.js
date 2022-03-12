@@ -12,7 +12,7 @@ export const data = [
     img: "shareMe-min.jpg",
     title: "ShareMe",
     description:
-      "ShareMe is a fullstack social application that allows you to fully post and edit images. ShareMe is managed using Sanity and designed using tailwind CSS.",
+      "ShareMe is a fullstack application that allows you to fully post and edit images. Managed using Sanity and designed using tailwind CSS.",
     Url: "https://flex-pics.netlify.app/",
   },
   {
@@ -20,7 +20,7 @@ export const data = [
     img: "cryptobase-min.jpg",
     title: "Cryptobase",
     description:
-      "Cryptobase is a React application designed with ant designs which helps to gather latest prices growth patterns and news on cryptocrurrencies around the world. ",
+      "Cryptobase is a React application designed with ant designs.It gathers  prices patterns and news on cryptocrurrencies. ",
     Url: "https://cryptobase-niifio.netlify.app/",
   },
   {
