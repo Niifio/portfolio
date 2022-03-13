@@ -6,7 +6,8 @@ import PersonIcon from "@mui/icons-material/Person";
 import TextSnippetSharpIcon from "@mui/icons-material/TextSnippetSharp";
 
 const Form = () => {
-  const [setResult] = useState(false);
+  const [result, setResult] = useState(false);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -87,7 +88,16 @@ const Form = () => {
           />
         </div>
         <div className="submit-input">
-          <input type="Submit" className="form__submit" />
+          {result ? (
+            <button
+              className="form__submit"
+              style={{ color: "green", fontWeight: "600" }}
+            >
+              Sent
+            </button>
+          ) : (
+            <input type="Submit" className="form__submit" />
+          )}
         </div>
       </div>
     </form>
