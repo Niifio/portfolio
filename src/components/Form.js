@@ -47,7 +47,7 @@ const Form = () => {
             placeholder="First Name"
             className="form__name"
             type="text"
-            name="user_name"
+            name="name"
             required
           />
         </div>
@@ -60,7 +60,7 @@ const Form = () => {
             placeholder="Email Address"
             className="form__email"
             type="email"
-            name="user_email"
+            name="email"
             required
           />
         </div>
